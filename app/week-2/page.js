@@ -1,11 +1,14 @@
-// app/week-2/page.js
-
 import React from 'react';
+import StudentInfo from './Student-Info';
 
-export default function Page() {
+
+const Week2Page = () => {
   return (
-    <main>
+    <div>
       <h1>Shopping List</h1>
-    </main>
+      <StudentInfo />
+    </div>
   );
-}
+};
+
+export default Week2Page;
