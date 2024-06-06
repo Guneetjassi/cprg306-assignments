@@ -1,17 +1,20 @@
+// app/page.js
 import React from 'react';
 import Link from 'next/link';
 
 const HomePage = () => {
   return (
-    <div>
-      <h1 style={{ fontSize: '2rem', fontWeight: 'bold', textAlign: 'center' }}>
-        CPRG 306: Web Development 2 - Assignments
-      </h1>
-      <ul>
-        <li>
-          {/* Use Next.js Link component */}
+    <div className="flex flex-col items-center justify-start min-h-screen p-8">
+      <h1 className="text-4xl font-bold mb-8 text-center">CPRG 306: Web Development 2 - Assignments</h1>
+      <ul className="list-disc text-left">
+        <li className="mb-4">
           <Link href="/week-2">
             Week 2 Assignment
+          </Link>
+        </li>
+        <li className="mb-4">
+          <Link href="/week-3">
+            Week 3 Assignment
           </Link>
         </li>
       </ul>

@@ -1,16 +1,12 @@
+// app/week-3/item.js
 import React from 'react';
 
 const Item = ({ name, quantity, category }) => {
   return (
-    <li className="p-4 border-b border-gray-200">
-      <div className="flex justify-between">
-        <div>
-          <h2 className="text-xl font-semibold">{name}</h2>
-          <p className="text-sm text-gray-500">{category}</p>
-        </div>
-        <div className="text-lg font-bold">{quantity}</div>
-      </div>
-    </li>
+    <div className="p-2 m-4 bg-slate-200 rounded-lg">
+      <h2 className="text-xl font-bold">{name}</h2>
+      <p>Buy {quantity} in {category}</p>
+    </div>
   );
 };
 
