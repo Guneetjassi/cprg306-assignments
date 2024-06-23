@@ -1,4 +1,3 @@
-// app/page.js
 import React from 'react';
 import Link from 'next/link';
 
@@ -25,6 +24,11 @@ const HomePage = () => {
         <li className="mb-4">
           <Link href="/week-5">
             Week 5 Assignment
+          </Link>
+        </li>
+        <li className="mb-4">
+          <Link href="/week-6">
+            Week 6 Assignment
           </Link>
         </li>
       </ul>
