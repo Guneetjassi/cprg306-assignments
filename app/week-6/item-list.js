@@ -37,27 +37,16 @@ const ItemList = () => {
 
   return (
     <div className="min-h-screen bg-gray-900 text-white p-4">
-      <h1 className="text-4xl mb-4">Shopping List</h1>
+      
       <div className="flex items-center mb-4">
         <span className="mr-2">Sort by:</span>
-        <button
-          className={`mr-2 py-2 px-4 rounded ${sortBy === 'name' ? 'bg-orange-500' : 'bg-gray-700'}`}
-          onClick={() => setSortBy('name')}
-        >
-          Name
-        </button>
-        <button
-          className={`mr-2 py-2 px-4 rounded ${sortBy === 'category' ? 'bg-orange-500' : 'bg-gray-700'}`}
-          onClick={() => setSortBy('category')}
-        >
-          Category
-        </button>
-        <button
-          className={`py-2 px-4 rounded ${sortBy === 'groupedCategory' ? 'bg-orange-500' : 'bg-gray-700'}`}
-          onClick={() => setSortBy('groupedCategory')}
-        >
-          Grouped Category
-        </button>
+
+        <button className={`mr-2 py-2 px-4 rounded ${sortBy === 'name' ? 'bg-orange-500' : 'bg-gray-700'}`}
+          onClick={() => setSortBy('name')}> Name </button>
+
+        <button className={`mr-2 py-2 px-4 rounded ${sortBy === 'category' ? 'bg-orange-500' : 'bg-gray-700'}`}
+          onClick={() => setSortBy('category')}> Category </button>
+        
       </div>
       <div>
         {renderItems()}
