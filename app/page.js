@@ -31,6 +31,11 @@ const HomePage = () => {
             Week 6 Assignment
           </Link>
         </li>
+        <li className="mb-4">
+          <Link href="/week-7">
+            Week 7 Assignment
+          </Link>
+        </li>
       </ul>
     </div>
   );
