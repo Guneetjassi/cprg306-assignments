@@ -1,8 +1,8 @@
 'use client';
 
 import React, { useEffect } from 'react';
-import { useRouter } from 'next/navigation'; // use 'next/navigation' for Next.js 13+
-import { useUserAuth } from './_utils/auth-context'; // Adjust the path if necessary
+import { useRouter } from 'next/navigation'; 
+import { useUserAuth } from './_utils/auth-context'; 
 
 const Page = () => {
   const { user, gitHubSignIn, firebaseSignOut } = useUserAuth();
@@ -10,7 +10,7 @@ const Page = () => {
 
   useEffect(() => {
     if (!user) {
-      router.push('/week-8'); // Redirect to the login page if not logged in
+      router.push('/week-8'); 
     }
   }, [user, router]);
 

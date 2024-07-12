@@ -1,8 +1,8 @@
 'use client';
 
 import React, { useEffect } from 'react';
-import { useRouter } from 'next/navigation'; // use 'next/navigation' for Next.js 13+
-import { useUserAuth } from '../_utils/auth-context'; // Adjust the path if necessary
+import { useRouter } from 'next/navigation'; 
+import { useUserAuth } from '../_utils/auth-context'; 
 import NewItem from './new-item';
 import ItemList from './item-list';
 import MealIdeas from './meal-ideas';
@@ -15,7 +15,7 @@ const ShoppingListPage = () => {
 
   useEffect(() => {
     if (!user) {
-      router.push('/week-8'); // Redirect to the landing page if not logged in
+      router.push('/week-8'); 
     }
   }, [user, router]);
 
@@ -29,7 +29,7 @@ const ShoppingListPage = () => {
   };
 
   if (!user) {
-    return <div>Loading...</div>; // Render a loading state while checking user
+    return <div>Loading...</div>; 
   }
 
   return (
